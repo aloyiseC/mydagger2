@@ -1,0 +1,7 @@
+# ninja log v5
+1	4711	0	CMakeFiles/native-lib.dir/native-lib.c.o	9952d887f2f41ee0
+4712	8611	0	D:/workspace/MyDagger2/app/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	d858269fcd705486
+2	3749	0	CMakeFiles/native-lib.dir/native-lib.c.o	9952d887f2f41ee0
+3749	7356	0	D:/workspace/MyDagger2/app/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	d858269fcd705486
+2	151	0	CMakeFiles/native-lib.dir/native-lib.c.o	9952d887f2f41ee0
+151	685	0	D:/workspace/MyDagger2/app/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	d858269fcd705486

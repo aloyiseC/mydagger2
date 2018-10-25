@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="keystore"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       android:id="@+id/keystore_note"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/keystore_edit"
+        android:textColor="@color/color_444444"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/keystore_note"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/password_note"
+        android:layout_below="@+id/keystore_edit"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/password_edit"
+        android:textColor="@color/color_444444"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/password_note"
+        android:layout_below="@+id/keystore_edit"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/submit"
+        android:layout_below="@+id/password_edit"
+        android:textColor="@color/color_444444"
+        android:text="import"/>
+</RelativeLayout>

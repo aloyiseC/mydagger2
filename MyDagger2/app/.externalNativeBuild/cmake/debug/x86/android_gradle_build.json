@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "D:/workspace/MyDagger2/app/src/main/cpp/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"D:\\eclipse\\adt-bundle-windows-x86_64-20140321\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\workspace\\MyDagger2\\app\\.externalNativeBuild\\cmake\\debug\\x86 --target clean"
+	],
+	"libraries" : 
+	{
+		"native-lib-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "native-lib",
+			"buildCommand" : "D:\\eclipse\\adt-bundle-windows-x86_64-20140321\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\workspace\\MyDagger2\\app\\.externalNativeBuild\\cmake\\debug\\x86 --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android --gcc-toolchain=D:/eclipse/adt-bundle-windows-x86_64-20140321/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=D:/eclipse/adt-bundle-windows-x86_64-20140321/sdk/ndk-bundle/sysroot -Dnative_lib_EXPORTS  -isystem D:/eclipse/adt-bundle-windows-x86_64-20140321/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/workspace/MyDagger2/app/src/main/cpp/native-lib.c",
+					"workingDirectory" : "D:/workspace/MyDagger2/app/.externalNativeBuild/cmake/debug/x86"
+				}
+			],
+			"output" : "D:/workspace/MyDagger2/app/build/intermediates/cmake/debug/obj/x86/libnative-lib.so",
+			"toolchain" : "269711945"
+		}
+	},
+	"toolchains" : 
+	{
+		"269711945" : 
+		{
+			"cCompilerExecutable" : "D:/eclipse/adt-bundle-windows-x86_64-20140321/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "D:/eclipse/adt-bundle-windows-x86_64-20140321/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

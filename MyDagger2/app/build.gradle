@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        applicationId "laiwei.mydagger2"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        jackOptions{
+            enabled true
+        }
+        multiDexEnabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+}
+
+project.ext {
+    retrofitVersion = "2.3.0"
+    okhttpVersion = "3.9.0"
+    supportVersion = "27.0.2"
+    web3jVersion = "3.0.1-android"
+    gethVersion = "1.7.0"
+    gsonVersion = "2.8.2"
+    rxJavaVersion = "2.1.6"
+    rxAndroidVersion = "2.0.1"
+    daggerVersion = "2.11"
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.google.dagger:dagger-android:2.11'
+    compile 'com.google.dagger:dagger-android-support:2.11'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.11'//gradle 2.3以上
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11'//gradle 2.3以上
+    compile 'org.glassfish:javax.annotation:10.0-b28'
+
+    // Http client
+    compile "com.squareup.retrofit2:retrofit:$project.retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$project.retrofitVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$project.retrofitVersion"
+    compile "com.squareup.okhttp3:okhttp:$project.okhttpVersion"
+    compile "com.google.code.gson:gson:$project.gsonVersion"
+
+    // ReactiveX
+    compile "io.reactivex.rxjava2:rxjava:$project.rxJavaVersion"
+    compile "io.reactivex.rxjava2:rxandroid:$project.rxAndroidVersion"
+    //ViewModel
+    compile "android.arch.lifecycle:runtime:1.0.3"
+    compile "android.arch.lifecycle:extensions:1.0.0"
+
+    //geth
+    compile "org.ethereum:geth:$project.gethVersion"
+
+    // Etherium client
+    compile "org.web3j:core:$project.web3jVersion"
+}
+
+

@@ -1,0 +1,7 @@
+# ninja log v5
+1	178	0	CMakeFiles/native-lib.dir/native-lib.c.o	8c6c75b82df3848b
+179	3011	0	D:/workspace/MyDagger2/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	10506b04c845ca5a
+2	172	0	CMakeFiles/native-lib.dir/native-lib.c.o	8c6c75b82df3848b
+172	2542	0	D:/workspace/MyDagger2/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	10506b04c845ca5a
+2	94	0	CMakeFiles/native-lib.dir/native-lib.c.o	8c6c75b82df3848b
+94	177	0	D:/workspace/MyDagger2/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	10506b04c845ca5a

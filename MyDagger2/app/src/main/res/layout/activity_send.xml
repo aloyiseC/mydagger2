@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="20dp"
+       android:id="@+id/default_tv"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/to"
+        android:layout_below="@+id/default_tv"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/amount"
+        android:layout_below="@+id/to"
+        android:textSize="16sp"
+        android:textColor="@color/color_444444"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/btn"
+        android:text="send"
+        android:layout_below="@+id/amount" />
+</RelativeLayout>

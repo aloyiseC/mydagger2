@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyDagger2</string>
+    <string name="unlock_screen_title_android">Unlock screen</string>
+    <string name="unlock_screen_prompt_android">Please unlock your Android device to continue.</string>
+</resources>
